@@ -315,8 +315,8 @@ TheilSen <- function(mydata, pollutant = "nox", deseason = FALSE,
   vars <- c("date", pollutant)
 
 
-  if (!avg.time %in% c("year", "month", "season")) {
-    stop("avg.time can only be 'month', 'season' or 'year'.")
+  if (!avg.time %in% c("year", "month", "season", "day")) {
+    stop("avg.time can only be 'month', 'season', 'day' or 'year'.")
   }
 
   ## find time interval
